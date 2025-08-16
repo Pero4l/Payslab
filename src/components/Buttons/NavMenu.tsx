@@ -16,7 +16,7 @@ const NavMenu = () => {
       {/* Menu button (always on top) */}
       <div
         onClick={handleIsOpenedMenu}
-        className={`fixed top-5 lg:hidden text-xl rounded-full p-3 z-50 ${IsOpenedMenu ? 'bg-white' : 'bg-black text-white'}`}
+        className={`fixed top-5 left-1 lg:hidden text-xl rounded-full p-3 z-50 ${IsOpenedMenu ? 'bg-white' : 'bg-black text-white'}`}
       >
         {IsOpenedMenu ? <IoMdClose /> : <TbMenu />}
       </div>
