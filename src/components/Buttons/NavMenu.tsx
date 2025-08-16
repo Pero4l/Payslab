@@ -16,14 +16,14 @@ const NavMenu = () => {
       {/* Menu button (always on top) */}
       <div
         onClick={handleIsOpenedMenu}
-        className={`fixed top-5 left-1 lg:hidden text-xl rounded-full p-3 z-50 ${IsOpenedMenu ? 'bg-white' : 'bg-black text-white'}`}
+        className={`sticky top-5 left-1 lg:hidden text-xl rounded-full p-3 z-50 ${IsOpenedMenu ? 'bg-white' : 'bg-black text-white'}`}
       >
         {IsOpenedMenu ? <IoMdClose /> : <TbMenu />}
       </div>
 
       {/* Overlay menu */}
       {IsOpenedMenu && (
-        <div className="fixed top-0 left-0 w-full h-full bg-black/80 backdrop-blur-sm z-40">
+        <div className="fixed top-0 right-0 w-full h-full bg-black/80 backdrop-blur-sm z-40">
           <ul className="lg:hidden flex flex-col gap-4 my-16 px-16">
             <li className="cursor-pointer mt-5 bg-white py-2 font-medium px-4 rounded-full w-fit">Personal</li>
             <li className="text-gray-400 cursor-pointer bg-white py-2 font-medium px-4 rounded-full w-fit">
