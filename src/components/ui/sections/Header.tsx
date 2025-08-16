@@ -1,11 +1,10 @@
 'use client'
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
-import { TbMenu } from "react-icons/tb";
-import { TbLogin } from "react-icons/tb";
-import { IoMdClose } from "react-icons/io";
 import Image from 'next/image'
 import logo from "@/public/images/logo.webp"
 import { useState, useRef, useEffect } from 'react';
+import NavMenu from "@/src/components/Buttons/NavMenu";
+import NavAcc from "@/src/components/Buttons/NavAcc";
 
 const Header = () => {
 
@@ -26,19 +25,7 @@ const Header = () => {
                     document.removeEventListener('mousedown', handleClickOutside);
                   };
                 }, [open]);
-      // FOR THE MOBILE AND SIGNIN MENU
-
-      const [IsOpenedMenu, setIsOpenedMenu ] = useState(false)
-
-      const handleIsOpenedMenu = () => {
-        setIsOpenedMenu(!IsOpenedMenu)
-      }
-
-       const [IsOpenedAcc, setIsOpenedAcc ] = useState(false)
-
-      const handleIsOpenedAcc = () => {
-        setIsOpenedAcc(!IsOpenedAcc)
-      }
+      
 
   return (
     <div>
@@ -47,12 +34,11 @@ const Header = () => {
       <nav className='flex justify-between items-center lg:p-10 lg:px-20 p-5'>
         
         {/* MOBILE MENU */}
-        <div onClick={handleIsOpenedMenu} className="lg:hidden text-xl rounded-full p-3 bg-black text-white">
-          {IsOpenedMenu ? <IoMdClose/> : <TbMenu/>}
-        </div>
+        <NavMenu/>
 
       {/* LOGO */}
         <div className='flex items-center'>
+          
             <Image className='w-10' src={logo} alt="Logo" />
             <h1 className='text-2xl font-semibold'>PaySlab</h1>
         </div>
@@ -100,9 +86,7 @@ const Header = () => {
             </div>
               
               {/* MOBILE LOGIN  */}
-            <div onClick={handleIsOpenedAcc} className='lg:hidden text-xl rounded-full p-3 bg-black text-white'>
-                {IsOpenedAcc ? <IoMdClose/> : <TbLogin />}
-                </div>
+            <NavAcc/>
             
         </div>
 
