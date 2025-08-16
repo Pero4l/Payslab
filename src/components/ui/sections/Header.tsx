@@ -46,7 +46,7 @@ const Header = () => {
         <NavMenu/>
 
         {/* LOGO */}
-        <div className='flex items-center relative left-5 lg:left-0'>
+        <div className='flex items-center'>
           <Image className='w-10' src={logo} alt="Logo" />
           <h1 className='text-2xl font-semibold'>PaySlab</h1>
         </div>
