@@ -10,6 +10,10 @@ const words: string[] = ["Pay", "Send", "Receive", "Exchange", "Get paid"];
 const HowItWorks: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center mt-20 sm:mt-40 relative px-4 lg:px-20 sm:px-8">
+      <div className="mb-10">
+        <h1 className="text-2xl font-semibold">How it works</h1>
+        <h1 className="text-2xl font-semibold opacity-20 rotate-180 ">How it works</h1>
+      </div>
       <div className="text-center">
         <h1 className="font-bold uppercase text-4xl sm:text-6xl lg:text-9xl">
           A new way to

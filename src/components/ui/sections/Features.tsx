@@ -18,13 +18,18 @@ const Features = () => {
 
 
   return (
- <div className="flex flex-col lg:flex-row rounded-[24px] overflow-hidden h-[800px] mt-44 mb-44 font-sans bg-white lg:mx-20 ">
+<>
+ <div className="flex flex-col lg:flex-row rounded-[24px] overflow-hidden h-[800px] mt-20 lg:mt-44 mb-2 font-sans bg-white lg:mx-20 ">
+ <div>
+   <h1 className='text-center font-semibold text-2xl'>Features</h1>
+  <h1 className='text-center font-semibold text-2xl rotate-180 opacity-20'>Features</h1>
+ </div>
       {/* Left side */}
       <div className="flex-1 px-16 py-10 flex flex-col justify-center text-black lg:-mt-60">
         <h1 className="font-extrabold text-[36px] lg:text-[60px] leading-tight m-0">
           Your transfers
           <br />
-          just got global.
+          just got global
         </h1>
         <strong className="mt-4 text-[16px]">Enter multi-currency accounts</strong>
         <p className="mt-2 text-[14px] lg:w-[400px] lg:text-[20px] text-gray-400">
@@ -67,13 +72,136 @@ const Features = () => {
 
 
 
-        <div className="relative lg:right-0 right-8 lg:self-end text-right font-medium text-[80px] lg:text-[250px] leading-none drop-shadow-lg">
+        <div className="relative lg:right-0 bottom-14 right-8 lg:self-end text-right font-medium text-[80px] lg:text-[250px] leading-none drop-shadow-lg">
           60
           <span className=" text-[30px] lg:text-[68px] ml-1">+</span>
           <div className=" text-[12px] lg:text-[22px] font-normal lg:mt-[-1rem]">Available Supported Countries</div>
         </div>
       </div>
     </div>
+
+    {/* 2 */}
+
+
+     <div className="flex flex-col lg:flex-row rounded-[24px] overflow-hidden h-[800px] mb-2 font-sans bg-white lg:mx-20 ">
+      {/* Left side */}
+      <div className="flex-1 px-16 py-10 flex flex-col justify-center text-black lg:-mt-60">
+        <h1 className="font-extrabold text-[36px] lg:text-[60px] leading-tight m-0">
+          Send money to loved 
+          <br />
+          ones in an instant
+        </h1>
+        <strong className="mt-4 text-[16px]">No more waiting days, just seconds</strong>
+        <p className="mt-2 text-[14px] lg:w-[400px] lg:text-[20px] text-gray-400">
+         Embrace instant stablecoins such 
+         as USDc, or opt for same-day settlement 
+         in the local currency of your choice.
+        </p>
+      </div>
+
+      {/* Right side */}
+      <div
+        className="flex-1 relative flex flex-col justify-between p-8 text-white font-semibold text-sm rounded-tr-[24px] rounded-br-[24px] w-[400px]"
+        style={{
+          backgroundImage:
+            'url("https://framerusercontent.com/images/QVtZ2wCPe83s1F5evGWz5HUPFzk.png")',
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+  {/* <ul className="flex flex-col gap-3 m-0 p-0 list-none drop-shadow-lg overflow-hidden lg:h-[700px]">
+  {countries.map(({ name, flag, disabled }, i) => (
+    <li
+      key={i}
+      className={`flex items-center gap-2 cursor-pointer 
+        animate-[slideDown_2s_linear_infinite] 
+        ${disabled ? 'opacity-30 cursor-default' : ''}
+      `}
+      style={{ animationDelay: `${i * 0.5}s` }}
+    >
+      <span
+        role="img"
+        aria-label={`${name} flag`}
+        className="lg:text-[50px] text-[20px] leading-none"
+      >
+        {flag}
+      </span>
+      <span>{name}</span>
+    </li>
+  ))}
+</ul> */}
+
+
+
+        <div className="relative lg:right-0 right-8 lg:self-end text-right font-medium text-[80px] lg:text-[250px] leading-none drop-shadow-lg">
+          5
+          <span className=" text-[30px] lg:text-[68px] ml-1">S</span>
+          <div className=" text-[12px] lg:text-[22px] font-normal lg:mt-[-1rem]">Average Settlement time</div>
+        </div>
+      </div>
+    </div>
+
+    {/* 3 */}
+
+
+     <div className="flex flex-col lg:flex-row rounded-[24px] overflow-hidden h-[800px]  mb-44 font-sans bg-white lg:mx-20 ">
+      {/* Left side */}
+      <div className="flex-1 px-16 py-10 flex flex-col justify-center text-black lg:-mt-60">
+        <h1 className="font-extrabold text-[36px] lg:text-[60px] leading-tight m-0">
+          Spend USDC or Fiat 
+          <br />
+          at your local shop
+        </h1>
+        <strong className="mt-4 text-[16px]">Transact like a true local</strong>
+        <p className="mt-2 text-[14px] lg:w-[400px] lg:text-[20px] text-gray-400">
+         Effortlessly spend USDC or any other supported
+          fiat currency at your 
+         local merchant, instantly at low costs. 
+        </p>
+      </div>
+
+      {/* Right side */}
+      <div
+        className="flex-1 relative flex flex-col justify-between p-8 text-white font-semibold text-sm rounded-tr-[24px] rounded-br-[24px] w-[400px]"
+        style={{
+          backgroundImage:
+            'url("https://framerusercontent.com/images/CWEUlbKfbmpNM4P2TeqjsQl6lI.png")',
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+  {/* <ul className="flex flex-col gap-3 m-0 p-0 list-none drop-shadow-lg overflow-hidden lg:h-[700px]">
+  {countries.map(({ name, flag, disabled }, i) => (
+    <li
+      key={i}
+      className={`flex items-center gap-2 cursor-pointer 
+        animate-[slideDown_2s_linear_infinite] 
+        ${disabled ? 'opacity-30 cursor-default' : ''}
+      `}
+      style={{ animationDelay: `${i * 0.5}s` }}
+    >
+      <span
+        role="img"
+        aria-label={`${name} flag`}
+        className="lg:text-[50px] text-[20px] leading-none"
+      >
+        {flag}
+      </span>
+      <span>{name}</span>
+    </li>
+  ))}
+</ul> */}
+
+
+
+        <div className="relative lg:right-0 right-8 lg:self-end text-right font-medium text-[80px] lg:text-[250px] leading-none drop-shadow-lg">
+          1
+          <span className=" text-[30px] lg:text-[68px] ml-1">%</span>
+          <div className=" text-[12px] lg:text-[22px] font-normal lg:mt-[-1rem]">Average Processing Fees</div>
+        </div>
+      </div>
+    </div>
+</>
   );
 };
 

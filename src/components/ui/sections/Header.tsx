@@ -102,9 +102,9 @@ const Header = () => {
             </li> */}
 
             {/* Business (Coming Soon) */}
-            <li className="text-gray-300 cursor-pointer text-center">
+            <li className=" cursor-pointer text-center hover:bg-gray-300 p-1 px-4 rounded-xl">
               Business
-              <p className="text-[7px]">Coming soon!</p>
+              {/* <p className="text-[7px]">Coming soon!</p> */}
             </li>
 
             {/* About Us */}

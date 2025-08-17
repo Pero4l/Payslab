@@ -25,10 +25,10 @@ const NavMenu = () => {
       {IsOpenedMenu && (
         <div className="fixed top-0 right-0 w-full h-full bg-black/80 backdrop-blur-sm z-40">
           <ul className="lg:hidden flex flex-col gap-4 my-16 px-16">
-            <li className="cursor-pointer mt-5 bg-white py-2 font-medium px-4 rounded-full w-fit">Personal</li>
-            <li className="text-gray-400 cursor-pointer bg-white py-2 font-medium px-4 rounded-full w-fit">
+            {/* <li className="cursor-pointer mt-5 bg-white py-2 font-medium px-4 rounded-full w-fit">Personal</li> */}
+            <li className=" cursor-pointer bg-white py-2 font-medium px-4 rounded-full w-fit">
               Business
-              <p className="text-[7px] text-center">Coming soon!</p>
+              {/* <p className="text-[7px] text-center">Coming soon!</p> */}
             </li>
             <li className="cursor-pointer bg-white py-2 font-medium px-4 rounded-full w-fit">About us</li>
             <li className="cursor-pointer  bg-white py-2 font-medium px-4 rounded-full w-fit">Join waitlist</li>
