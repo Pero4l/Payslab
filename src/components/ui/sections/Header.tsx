@@ -56,7 +56,7 @@ const Header = () => {
           <ul className="hidden lg:flex flex-col lg:flex-row font-medium space-x-10 shadow-xs border border-gray-200 lg:p-3 lg:pt-5 lg:px-10 lg:rounded-full">
 
             {/* Personal */}
-            <li 
+            {/* <li 
               className="relative group cursor-pointer hover:bg-gray-300 p-1 px-4 rounded-xl"
               onClick={() => setPersonalOpen(!personalOpen)}
             >
@@ -93,7 +93,7 @@ const Header = () => {
                   </div>
                 </div>
               )}
-            </li>
+            </li> */}
 
             {/* Business (Coming Soon) */}
             <li className="text-gray-300 cursor-pointer text-center">
@@ -147,7 +147,7 @@ const Header = () => {
         {/* BUTTONS AND LANGUAGE DROPDOWN */}
         <div className='flex items-center lg:gap-5 gap-2'>
           <div>
-            <div className="relative" ref={dropdownRef}>
+            {/* <div className="relative" ref={dropdownRef}>
               <h1
                 className='flex items-center font-medium cursor-pointer select-none'
                 onClick={() => setOpen((prev) => !prev)}
@@ -163,7 +163,7 @@ const Header = () => {
                   </ul>
                 </div>
               )}
-            </div>
+            </div> */}
           </div>
 
           {/* BUTTON */}
