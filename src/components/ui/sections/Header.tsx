@@ -12,6 +12,7 @@ import { IoFingerPrintSharp } from "react-icons/io5";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaMedium } from "react-icons/fa6";
+import {motion} from "framer-motion"
 
 const Header = () => {
   // FOR THE LANGUAGE DROPDOWN
@@ -38,7 +39,12 @@ const Header = () => {
   const [waitlistOpen, setWaitlistOpen] = useState(false);
 
   return (
-    <div>
+    <motion.div 
+      initial={{ opacity: 0, y: -50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 3, ease: "easeInOut" }}
+      viewport={{ once: true }}
+    >
       {/* NAV BAR */}
       <nav className='flex justify-between items-center lg:p-10 lg:px-20 p-5'>
         
@@ -176,7 +182,7 @@ const Header = () => {
           <NavAcc/>
         </div>
       </nav>
-    </div>
+    </motion.div>
   )
 }
 
