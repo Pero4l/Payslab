@@ -38,7 +38,7 @@ const Footer = () => {
         </div>
 
         {/* Link Columns */}
-        <div className="lg:mr-[100px] flex flex-1 flex-wrap lg:gap-32 gap-20  text-gray-400 pt-10 lg:pt-0">
+        {/* <div className="lg:mr-[100px] flex flex-1 flex-wrap lg:gap-32 gap-20  text-gray-400 pt-10 lg:pt-0">
           <div>
             <h4 className="text-black font-medium mb-2 cursor-pointer">Personal</h4>
             <ul className="space-y-1">
@@ -71,7 +71,7 @@ const Footer = () => {
               <li className='cursor-pointer'>Contact</li>
             </ul>
           </div>
-        </div>
+        </div> */}
       </div>
 
      
@@ -86,9 +86,9 @@ const Footer = () => {
 
      {/* Footer Brand Name */}
 
-    <div className="hidden md:flex justify-center md:text-[200px] lg:text-[480px] font-bold text-[#454447] mt-5 leading-none text-center">
+    {/* <div className="hidden md:flex justify-center md:text-[200px] lg:text-[480px] font-bold text-[#454447] mt-5 leading-none text-center">
         PaySlab
-      </div>
+      </div> */}
     </div>
   )
 }
