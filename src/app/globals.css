@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
-/* :root {
+:root {
   --background: #ffffff;
   --foreground: #171717;
-} */
+}
 
 /* @theme inline {
   --color-background: var(--background);
@@ -28,4 +28,30 @@ body {
 .hero-waitlist-btn {
   background: linear-gradient(135deg, rgb(131, 131, 131) -35%, rgba(41, 41, 41, 0.34) -20%, rgba(51, 51, 51, 0.55) -15%, rgb(47, 47, 47) 100%);
   border-radius: 160px;
+}
+
+.card {
+  background: linear-gradient(135deg, rgb(131, 131, 131) -35%, rgba(41, 41, 41, 0.34) -20%, rgba(51, 51, 51, 0.55) -15%, rgb(47, 47, 47) 100%);
+  border-radius: 16px;
+}
+
+/* @keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+} */
+
+@keyframes slideDown {
+  20% {
+    transform: translateY(0);
+  }
+  80% {
+    transform: translateY(100%);
+  }
 }
