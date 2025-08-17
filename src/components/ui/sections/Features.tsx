@@ -19,10 +19,14 @@ const Features = () => {
 
   return (
 <>
+   {/* <div className='mt-20 lg:mt-44 -mb-20 lg:-mb-0'>
+      <h1 className='text-center font-semibold text-2xl lg:text-[80px] -mb-10 lg:-mb-32'>Features</h1>
+  <h1 className='text-center font-semibold text-2xl lg:text-[80px] rotate-180 opacity-20'>Features</h1>
+   </div> */}
+
  <div className="flex flex-col lg:flex-row rounded-[24px] overflow-hidden h-[800px] mt-20 lg:mt-44 mb-2 font-sans bg-white lg:mx-20 ">
  <div>
-   <h1 className='text-center font-semibold text-2xl'>Features</h1>
-  <h1 className='text-center font-semibold text-2xl rotate-180 opacity-20'>Features</h1>
+
  </div>
       {/* Left side */}
       <div className="flex-1 px-16 py-10 flex flex-col justify-center text-black lg:-mt-60">
@@ -31,7 +35,7 @@ const Features = () => {
           <br />
           just got global
         </h1>
-        <strong className="mt-4 text-[16px]">Enter multi-currency accounts</strong>
+        <strong className="mt-4 text-[22px]">Enter multi-currency accounts</strong>
         <p className="mt-2 text-[14px] lg:w-[400px] lg:text-[20px] text-gray-400">
           Seamlessly transfer funds to over 60 countries, with support for both fiat and digital
           currencies.
@@ -72,7 +76,7 @@ const Features = () => {
 
 
 
-        <div className="relative lg:right-0 bottom-14 right-8 lg:self-end text-right font-medium text-[80px] lg:text-[250px] leading-none drop-shadow-lg">
+        <div className="relative lg:right-0 bottom-10 right-8 lg:self-end text-right font-medium text-[80px] lg:text-[250px] leading-none drop-shadow-lg">
           60
           <span className=" text-[30px] lg:text-[68px] ml-1">+</span>
           <div className=" text-[12px] lg:text-[22px] font-normal lg:mt-[-1rem]">Available Supported Countries</div>
@@ -91,7 +95,7 @@ const Features = () => {
           <br />
           ones in an instant
         </h1>
-        <strong className="mt-4 text-[16px]">No more waiting days, just seconds</strong>
+        <strong className="mt-4 text-[22px]">No more waiting days, just seconds</strong>
         <p className="mt-2 text-[14px] lg:w-[400px] lg:text-[20px] text-gray-400">
          Embrace instant stablecoins such 
          as USDc, or opt for same-day settlement 
@@ -152,7 +156,7 @@ const Features = () => {
           <br />
           at your local shop
         </h1>
-        <strong className="mt-4 text-[16px]">Transact like a true local</strong>
+        <strong className="mt-4 text-[22px]">Transact like a true local</strong>
         <p className="mt-2 text-[14px] lg:w-[400px] lg:text-[20px] text-gray-400">
          Effortlessly spend USDC or any other supported
           fiat currency at your 

@@ -95,7 +95,7 @@ const CTA = () => {
               <input
                 type="text"
                 placeholder="email"
-                className="py-4 px-5 rounded-[160px] bg-[#EBEBEB69] "
+                className="py-4 px-5 outline-none rounded-[160px] bg-[#EBEBEB69] "
               />
               <button className="px-5  py-3 text text-white font-medium hero-waitlist-btn -ml-30 md:-ml-8  ">
                 Join our waitlist

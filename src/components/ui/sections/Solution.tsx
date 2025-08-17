@@ -63,11 +63,15 @@ const Solution = () => {
   },
 ];
   return (
+<>
+
+     {/* <div className='mt-32 lg:mt-44 -mb-20 lg:-mb-44'>
+       <h1 className='text-center font-semibold text-2xl lg:text-[80px]'>Solution</h1>
+    <h1 className='text-center font-semibold text-2xl rotate-12 opacity-20 lg:text-[80px] relative lg:bottom-7'>Solution</h1>
+     </div> */}
+
    <div className="mt-32 lg:mt-72 p-4 lg:px-22 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-    <div>
-      <h1 className='text-center font-semibold text-2xl'>Solution</h1>
-    <h1 className='text-center font-semibold text-2xl rotate-12 opacity-20'>Solution</h1>
-    </div>
+   
       {card.map((card, index) => (
         <div
           key={index}
@@ -83,6 +87,7 @@ const Solution = () => {
         </div>
       ))}
     </div>
+</>
   );
 };
 
