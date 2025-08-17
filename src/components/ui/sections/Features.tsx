@@ -20,7 +20,7 @@ const Features = () => {
   return (
  <div className="flex flex-col lg:flex-row rounded-[24px] overflow-hidden h-[800px] mt-44 mb-44 font-sans bg-white lg:mx-20 ">
       {/* Left side */}
-      <div className="flex-1 px-16 py-10 flex flex-col justify-center text-black -mt-60">
+      <div className="flex-1 px-16 py-10 flex flex-col justify-center text-black lg:-mt-60">
         <h1 className="font-extrabold text-[36px] lg:text-[60px] leading-tight m-0">
           Your transfers
           <br />
