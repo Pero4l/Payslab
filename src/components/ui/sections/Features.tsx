@@ -35,7 +35,7 @@ const Features = () => {
 
       {/* Right side */}
       <div
-        className="flex-1 relative flex flex-col justify-between p-8 text-white font-semibold text-sm rounded-tr-[24px] rounded-br-[24px] w-[50px]"
+        className="flex-1 relative flex flex-col justify-between p-8 text-white font-semibold text-sm rounded-tr-[24px] rounded-br-[24px] w-[400px]"
         style={{
           backgroundImage:
             'url("https://framerusercontent.com/images/szMdJ1k7ngrAgHVj7MLZmBF0TU.png")',
