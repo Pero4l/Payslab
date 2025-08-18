@@ -53,7 +53,7 @@ const Testimonials = () => {
               height={100}
               className="object-cover rounded-full mb-4 sm:mb-6 w-20 h-20 sm:w-24 sm:h-24"
             />
-            <p className="text-lg sm:text-xl font-semibold">Peter Abaham</p>
+            <p className="text-lg sm:text-xl font-semibold">Peter Abahim</p>
             <p className="text-gray-500 mb-2 sm:mb-4 text-sm sm:text-base">Entrepreneur</p>
             <p className="text-gray-700 italic text-sm sm:text-base">
               "Payslab keeps my business moving — transactions are instant and reliable."

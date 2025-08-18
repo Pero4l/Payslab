@@ -30,7 +30,7 @@ const Features = () => {
  </div>
       {/* Left side */}
       <div className="flex-1 px-16 py-10 flex flex-col justify-center text-black lg:-mt-60">
-        <h1 className="font-extrabold text-[36px] lg:text-[60px] leading-tight m-0">
+        <h1 className="font-extrabold text-[36px] md:text-[60px] leading-tight m-0">
           Your transfers
           <br />
           just got global
@@ -52,27 +52,30 @@ const Features = () => {
           backgroundPosition: "center",
         }}
       >
-  <ul className="flex flex-col gap-3 m-0 p-0 list-none drop-shadow-lg overflow-hidden lg:h-[700px]">
-  {countries.map(({ name, flag, disabled }, i) => (
-    <li
-      key={i}
-      className={`flex items-center gap-2 cursor-pointer 
-        animate-[slideDown_2s_linear_infinite] 
-        ${disabled ? 'opacity-30 cursor-default' : ''}
-      `}
-      style={{ animationDelay: `${i * 0.5}s` }}
-    >
-      <span
-        role="img"
-        aria-label={`${name} flag`}
-        className="lg:text-[50px] text-[20px] leading-none"
-      >
-        {flag}
-      </span>
-      <span>{name}</span>
-    </li>
-  ))}
-</ul>
+<div className="relative overflow-hidden lg:h-[700px] h-[400px]">
+  <div className="animate-[slideup_30s_linear_infinite]">
+    <ul className="flex flex-col gap-3 m-0 p-0 list-none drop-shadow-lg">
+      {countries.concat(countries).map(({ name, flag, disabled }, i) => (
+        <li
+          key={i}
+          className={`flex items-center gap-2 cursor-pointer ${
+            disabled ? 'opacity-30 cursor-default' : ''
+          }`}
+        >
+          <span
+            role="img"
+            aria-label={`${name} flag`}
+            className="lg:text-[50px] text-[20px] leading-none"
+          >
+            {flag}
+          </span>
+          <span>{name}</span>
+        </li>
+      ))}
+    </ul>
+  </div>
+</div>
+
 
 
 
@@ -113,31 +116,11 @@ const Features = () => {
           backgroundPosition: "center",
         }}
       >
-  {/* <ul className="flex flex-col gap-3 m-0 p-0 list-none drop-shadow-lg overflow-hidden lg:h-[700px]">
-  {countries.map(({ name, flag, disabled }, i) => (
-    <li
-      key={i}
-      className={`flex items-center gap-2 cursor-pointer 
-        animate-[slideDown_2s_linear_infinite] 
-        ${disabled ? 'opacity-30 cursor-default' : ''}
-      `}
-      style={{ animationDelay: `${i * 0.5}s` }}
-    >
-      <span
-        role="img"
-        aria-label={`${name} flag`}
-        className="lg:text-[50px] text-[20px] leading-none"
-      >
-        {flag}
-      </span>
-      <span>{name}</span>
-    </li>
-  ))}
-</ul> */}
 
 
 
-        <div className="relative lg:right-0 right-8 lg:self-end text-right font-medium text-[80px] lg:text-[250px] leading-none drop-shadow-lg">
+
+        <div className="relative lg:right-0 top-[215px] lg:top-[450px] right-8 lg:self-end text-right font-medium text-[80px] lg:text-[250px] leading-none drop-shadow-lg">
           5
           <span className=" text-[30px] lg:text-[68px] ml-1">S</span>
           <div className=" text-[12px] lg:text-[22px] font-normal lg:mt-[-1rem]">Average Settlement time</div>
@@ -174,31 +157,11 @@ const Features = () => {
           backgroundPosition: "center",
         }}
       >
-  {/* <ul className="flex flex-col gap-3 m-0 p-0 list-none drop-shadow-lg overflow-hidden lg:h-[700px]">
-  {countries.map(({ name, flag, disabled }, i) => (
-    <li
-      key={i}
-      className={`flex items-center gap-2 cursor-pointer 
-        animate-[slideDown_2s_linear_infinite] 
-        ${disabled ? 'opacity-30 cursor-default' : ''}
-      `}
-      style={{ animationDelay: `${i * 0.5}s` }}
-    >
-      <span
-        role="img"
-        aria-label={`${name} flag`}
-        className="lg:text-[50px] text-[20px] leading-none"
-      >
-        {flag}
-      </span>
-      <span>{name}</span>
-    </li>
-  ))}
-</ul> */}
 
 
 
-        <div className="relative lg:right-0 right-8 lg:self-end text-right font-medium text-[80px] lg:text-[250px] leading-none drop-shadow-lg">
+
+        <div className="relative lg:right-0 right-8 top-[215px] lg:top-[450px] lg:self-end text-right font-medium text-[80px] lg:text-[250px] leading-none drop-shadow-lg">
           1
           <span className=" text-[30px] lg:text-[68px] ml-1">%</span>
           <div className=" text-[12px] lg:text-[22px] font-normal lg:mt-[-1rem]">Average Processing Fees</div>
